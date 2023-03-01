@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/css1.css')}}">
+</head>
+<body>
+    <center>
+        <h1>this template is rendered by using render_template</h1>
+        <h1>{{name}}</h1>
+        <h1>{{Team}}</h1>
+        <img src="{{ url_for('static',filename='images/dhoni2.jpg')}}" alt="imagenot found">
+        <h1>chinna thala</h1>
+        <img src="{{url_for('static' ,filename='images/raina.jpg')}}" alt="image not found">
+    </center>
+</body>
+</html>
